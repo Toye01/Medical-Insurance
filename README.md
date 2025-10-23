@@ -1,7 +1,7 @@
 # 🩺 Medical Insurance Data Analysis — PostgreSQL Project
 
 ## 📘 Overview
-This project demonstrates end-to-end data analysis using **PostgreSQL 17**, focusing on medical insurance data.  
+This project demonstrates end-to-end data analysis using **PostgreSQL**, focusing on medical insurance data.  
 The objective was to derive meaningful insights into **demographics, income, health risks, and medical activity patterns** using advanced SQL techniques such as aggregations, conditional logic, and window functions.
 
 ---
