@@ -126,6 +126,11 @@ select person_id, education, income,
 rank() over (partition by education order by income desc) as income_rank
 from medical_insurance_edit;
 
+select education, count(*) as total_people,
+round(avg(income::numeric),2) as avg_income
+from medical_insurance_edit
+group by education;
+
 
 -- Create a view named high_risk_patients 
 -- containing only patients with chronic diseases or `is_high_risk = 1`
@@ -134,6 +139,7 @@ create view high_risk_patients as
 select * from medical_insurance_edit where is_high_risk = 1 or chronic_count = 1;
 -- to view high risk patients table
 select * from high_risk_patients;
+
 
 
 
